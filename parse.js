@@ -25,8 +25,8 @@ const findValue = (number) => {
   return resultJson[numberStr] || '未找到';
 };
 
-console.log(findValue(1031));  // 应输出：递送区域附加费-偏远
-console.log(findValue(1071));  // 应输出：递送区域附加费
+console.log(findValue(10017));  // 应输出：递送区域附加费-偏远
+console.log(findValue(10001));  // 应输出：递送区域附加费
 
 const jsonString = JSON.stringify(resultJson, null, 2);
 fs.writeFileSync('result.json', jsonString);
